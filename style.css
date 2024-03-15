@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background:#010405;
+    width: 100vw;
+}
+.container {
+    height: 100Vh;
+}
+.container .navbar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    background: #000;
+}
+
+.container .navbar ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.navbar span,
+.navbar ul li,
+.menu #ulmenu li {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    user-select: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    text-align: center;
+}
+.navbar ul li:hover,
+.menu #ulmenu li:hover {
+    background: #042c61;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.home {
+    background: #042c61;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.navbar span {
+    background: none;
+}
+.navbar .color {color: tomato }
+#bar {
+    color: antiquewhite;
+    cursor: pointer;
+}
+.navbar span {
+    margin-left: 15px;
+}
+@media (max-width:1000px) {
+    .navbar ul {
+        visibility: hidden;
+    }
+}
+@media (min-width: 1000px) {
+    #bar {
+        display: none;
+    }
+}
+.menu {
+    height: calc( 100vh - 60px );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient( #0c1f3b ,#111e22 , #06253a );
+    display: none;
+}
+.menu #ulmenu li {
+    margin-top: 30px; 
+    padding: 5px;
+    text-align: center;
+}
+.hide {
+    display: block;
+    transition: all .7s ease;
+    width: 100vw;
+    
+}
